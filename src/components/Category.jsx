@@ -54,7 +54,7 @@ function Category({ category }) {
         <div className="flex gap-5">
           <button
             onClick={() => handleDelete(category.id)}
-            className="flex items-center text-gray-500  hover:text-red-400 cursor-pointer"
+            className="flex items-center text-red-800  hover:text-red-400 cursor-pointer"
           >
             <MdDelete /> Trash
           </button>
@@ -63,7 +63,7 @@ function Category({ category }) {
               setChilding(false);
               setEditing((prevState) => !prevState);
             }}
-            className="flex items-center text-gray-500  hover:text-green-400 cursor-pointer"
+            className="flex items-center text-green-800  hover:text-teal-500 cursor-pointer"
           >
             <MdOutlineEdit /> Edit
           </button>
@@ -72,7 +72,7 @@ function Category({ category }) {
               setChilding((prevState) => !prevState);
               setEditing(false);
             }}
-            className="flex items-center text-gray-500  hover:text-sky-400 cursor-pointer"
+            className="flex items-center text-blue-800  hover:text-sky-600 cursor-pointer"
           >
             <MdAddToPhotos /> Child
           </button>
